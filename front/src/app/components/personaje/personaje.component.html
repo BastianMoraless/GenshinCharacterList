@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row border rounded">
+        <div>
+            <img [src]="'http://localhost:3000/uploads/' + personaje.imagenUrl">
+            <h2>Informacion General</h2>
+            <p>{{personaje.informacionGeneral}}</p>
+        </div>
+        <table class="table m-0">
+            <tbody>
+                <tr>
+                    <th>Nombre</th>
+                    <td>{{personaje.nombre}}</td>
+                    <th>Titulo</th>
+                    <td>{{personaje.titulo}}</td>
+                </tr>
+                <tr>
+                    <th>Rareza</th>
+                    <td>{{personaje.rareza}}★</td>
+                    <th>elemento</th>
+                    <td>{{personaje.elemento}}</td>
+                </tr>
+                <tr>
+                    <th>constelacion</th>
+                    <td>{{personaje.constelacion}}</td>
+                    <th>Cumpleaños</th>
+                    <td>{{personaje.cumpleanos}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

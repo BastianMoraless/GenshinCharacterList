@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row  justify-content-center">
+    <form (submit)="createPersonaje()" [formGroup]="form()" class="col-6 border rounded">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" formControlName="nombre">
+        </div>
+        <div class="mb-3">
+          <label for="titulo" class="form-label">titulo</label>
+          <input type="text" class="form-control" id="titulo" formControlName="titulo">
+        </div>
+        <div class="mb-3">
+          <label for="Informacion" class="form-label">Informacion general</label>
+          <input type="text" class="form-control" id="Informacion" formControlName="informacionGeneral">
+        </div>
+        <div class="mb-3">
+          <label for="Rareza" class="form-label">Rareza</label>
+          <input type="number" class="form-control" id="Rareza" formControlName="rareza">
+        </div>
+        <div class="mb-3">
+          <label for="Elemento" class="form-label">Elemento</label>
+          <input type="text" class="form-control" id="Elemento" formControlName="elemento">
+        </div>
+        <div class="mb-3">
+          <label for="Constelacion" class="form-label">Constelacion</label>
+          <input type="text" class="form-control" id="Constelacion" formControlName="constelacion">
+        </div>
+        <div class="mb-3">
+          <label for="Cumpleaños" class="form-label">Cumpleaños</label>
+          <input type="text" class="form-control" id="Cumpleaños" formControlName="cumpleanos">
+        </div>
+        <div class="mb-3">
+          <label for="imagen" class="form-label">imagen</label>
+          <input type="file" class="form-control" id="imagen" (change)="onFileChange($event)">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
